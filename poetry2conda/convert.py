@@ -41,6 +41,7 @@ def convert(
     poetry_dependencies = poetry_config.get("dependencies", {})
     if include_dev:
         poetry_dependencies.update(poetry_config.get("dev-dependencies", {}))
+        poetry_dependencies.update(poetry_config.get("group", {}).get("dev", {}).get("dependencies", {}))
     poetry_extras = poetry_config.get("extras", {})
     # We mark the items listed in the selected extras as non-optional
     for extra in extras:
