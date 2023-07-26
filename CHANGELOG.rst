@@ -6,6 +6,11 @@ This document lists all important changes to poetry2conda.
 
 Version numbers follow `semantic versioning <http://semver.org>`_.
 
+0.4.0 (2023-07-26)
+------------------
+
+* Add support for new poetry groups to retrieve dev dependencies
+
 0.3.0 (2020-06-02)
 ------------------
 
